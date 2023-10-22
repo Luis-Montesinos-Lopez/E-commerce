@@ -1,19 +1,21 @@
 .carousel-caption{
+
     top: 1.25rem;
 }
-
-footer ul li{
+.carousel-caption h5{
+    color: var(--negro);
+   background-color: var(--blanco);
+   padding: 8px;
+   border: 2px solid var(--negro);
+   border-radius: 8px;
+}
+footer ul{
     list-style: none;
     padding: 0;
-}
-footer li a{
-    color: white;
-}
-footer a{
-    text-decoration: none;
+    margin: 0;
 }
 .carousel-item{
-    height: 560px;
+    height:640px;
     background-size: cover;
     background-position: center center;
 }

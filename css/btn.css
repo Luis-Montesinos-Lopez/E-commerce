@@ -1,4 +1,4 @@
-.btn{
+.boton{
     font-family: var(--texto);
     color: var(--primario);
     font-size: 16px;
@@ -10,15 +10,15 @@
     text-decoration: none;
     transition: all 0.3s;
 }
-.h-ctr.btn{
+.h-ctr.boton{
     border-left: none;
 } 
-.btn:hover{
+.boton:hover{
     background-color: var(--blanco);
     border: 2px solid var(--primario-claro);
     color: var(--primario-claro);
 
 }
-.jumbotron .btn{
+.jumbotron .boton{
     background-color: rgb(0, 0, 0,0.1);
 }

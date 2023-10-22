@@ -1,0 +1,17 @@
+.input-grp input{
+    font-family: var(--texto);
+    width: 100%;
+    padding: 8px 16px;
+    border: 2px solid var(--primario);
+    border-radius: 8px;
+}
+.input-grp input[type="checkbox"]{
+    width: auto;
+    
+}
+.input-grp input[type="search"]{
+    display: inline;
+}
+.form-check-input:checked{
+    background-color: var(--primario);
+}

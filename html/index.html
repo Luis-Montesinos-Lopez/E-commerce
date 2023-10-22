@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <title>Nakama Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/btn.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="../img/iconos/logo.png" alt="logo"></a>
+        </div>
+        <div class="h-ctr">
+            <div class="input-group mb-3">
+                <input type="search" class="form-control"  aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn m-color" type="button" id="button-addon2"><i class="bi bi-search m-color"></i></button>
+              </div>
+            
+        </div>
+        <div class="h-izq">            
+                <a href="carrito.html"><img src="../img/iconos/carrito1.png" alt="" class="relative"><span></span><div class="displaynone"><table id="lista-carrito" class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div></a>
+                    
+            <a href="login.html" class="btn"><img src="../img/iconos/logging.png" alt="">Iniciar sesion</a>
+        </div>
+    </header>
+    <nav>
+        <ul class="wrap">
+            <li><a href="index.html" class="btn">Ofertas</a></li>
+            <li><a href="productos.html"class="btn">Productos</a></li>
+            <li><a href="nosotros.html"class="btn">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="jumbotron">
+            <h1 class="h2">Las mejores figuras de tus animes favoritos</h1>
+            <a href="productos.html" class="btn">Consiguelas ahora</a>
+        </div>
+        <section class="encabezado">
+            <div class="wrap">
+                <h2>Nuestras figuras de oferta</h2>
+                <div>
+                    <ul class="ruleta">
+                        <li><a href="#onepiece"><img src="../img/animes/one piece/luffy/LUFFY.jpg" alt="onepiece"></a></li>
+                        <li><a href="#kimetsu"><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="kimetsu"></a></li>
+                        <li><a href="#naruto"><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="naruto"></a></li>
+                    </ul>
+                    <ul class="ruleta">
+                        <li><a href="#jujutsu"><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="jujutsu"></a></li>
+                        <li><a href="#dragonball"><img src="../img/animes/dragonball/goku/personajes.png" alt="dragonball"></a></li>
+                        <li><a href="#hero"><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="hero"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="onepiece.html" id="onepiece"><img src="../img/animes/one piece/luffy/LUFFY.jpg" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="kimetsu.html" id="kimetsu"><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="naruto.html" id="naruto"><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="jujutsu.html" id="jujutsu"><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="dragoball.html" id="dragonball"><img src="../img/animes/dragonball/goku/personajes.png" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tarjetas wrap">
+                <div class="tarjetas-info">
+                    <a href="hero.html" id="hero"><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="onepiece"></a>
+                    <h4>One piece</h4>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div >
+                        <img src="../img/animes/one piece/oferta-brook.jpg" alt="brookOferta" class="zoomrelative"><span class="zoomabsolute"><i class="bi bi-zoom-in m-color"></i></span>
+                    </div>
+                    <div class="card-info">
+                        <div>
+                            <h4>Figura Brook Red-Film-23cm</h4>    
+                        </div>
+                        <div class="precio">
+                            <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
+                            <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
+                        </div>
+                        <div class="comprar">
+                            <button class="btn">¡Lo quiero!</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="compromisos">
+            <div class="wrap">
+                
+                <div class="compromisos-info">
+                    <i class="bi bi-shield-lock m-color h2"></i>
+                    <div>
+                        <h5>Pago seguro</h5>
+                        <h6>100% garantizado</h6>
+                    </div>   
+                </div>
+
+                <div class="compromisos-info">
+                        <i class="bi bi-truck m-color h2"></i>
+                  
+                    <div>
+                        <h5>Envío gratis</h5>
+                        <h6>En pedidos de +100€</h6>
+                    </div>
+                    
+                </div>
+                <div class="compromisos-info">
+                        <i class="bi bi-check-square m-color h2"></i>
+                    <div>
+                        <h5>2 años de garantía</h5>
+                        <h6>En todos los productos</h6>
+                    </div>
+                    
+                </div>
+                <div class="compromisos-info">
+                     <i class="bi bi-box-seam m-color h2"></i>
+                    <div>
+                        <h5>Ofertas únicas</h5>
+                        <h6>En precios de mayoristas</h6>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <div class="izq">
+                    <a href="index.html"><img src="../img/iconos/logo.png" alt=""></a>
+                <div class="politicas">
+                  <ul>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                    <li><a href="">Politicas</a></li>
+                  </ul>
+                </div>
+            </div>
+            <div class="der">
+                <h4>Suscríbete a nuestra newsletter</h4>
+                    <form action="" class="formulario">
+                        <div class="input-grp">
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Acepto las <a href="#">Politicas</a> de la página
+                            </label>
+                          </div>
+                        
+                        <button type="submit" class="btn">Suscribirme</button>
+                    </form>
+            </div>
+        </div>
+        
+    </footer>
+    <div class="rrss wrap">
+        <div>
+            <h4>Síguenos en nuestras redes</h4>
+        </div>
+        <div>
+            <a href="#"><img src="../img/iconos/facebook1.png" alt=""></a>
+            <a href="#"><img src="../img/iconos/Instagram1.png" alt=""></a>
+            <a href="#"><img src="../img/iconos/Twitter1.png" alt=""></a>
+        </div>
+    </div>
+    
+</body>
+</html>

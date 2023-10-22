@@ -1,0 +1,14 @@
+.carousel-caption{
+    top: 1.25rem;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 0;
+}
+footer li a{
+    color: white;
+}
+footer a{
+    text-decoration: none;
+}

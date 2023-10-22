@@ -1,0 +1,24 @@
+.btn{
+    font-family: var(--texto);
+    color: var(--primario);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid var(--primario);
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.h-ctr.btn{
+    border-left: none;
+} 
+.btn:hover{
+    background-color: var(--blanco);
+    border: 2px solid var(--primario-claro);
+    color: var(--primario-claro);
+
+}
+.jumbotron .btn{
+    background-color: rgb(0, 0, 0,0.1);
+}

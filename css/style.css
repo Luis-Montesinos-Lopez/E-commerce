@@ -14,6 +14,7 @@
   }
 html{
     scroll-behavior: smooth;
+    scroll-margin-block-end: 0;
   }
 body{
     color: var(--negro);
@@ -78,23 +79,30 @@ header div{
   
 .h-izq{
     display: flex;
-    gap: 8px;
+    gap: 40px;
     justify-content: flex-end;
    align-items: center;
    margin-right: 16px;
    margin-left: -16px;
   }
-.h-izq form{
-    display:flex;
-  }
-  .relative{
-    position: relative;
-  }
-.displaynone{display:none;}
-.displaynone:hover{
-  display:block;
-  position: absolute;
 
+  #carrito{
+    display: flex;
+    position: relative;
+   
+  }
+  #carrito span{
+    right: -16px;
+  position: absolute;
+  font-weight: bold;  
+  background-color: var(--gris);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-decoration: none;
 }
 .h-izq a.btn{
   display: flex;
@@ -108,9 +116,7 @@ nav{
   color: var(--primario)!important;
  }
                                             /*Ruleta Productos*/
-.encabezado :last-child div{
-  border-bottom: 2px solid var(--gris);
-}
+
 .encabezado .wrap h2{
   text-align: center;
 }
@@ -128,13 +134,16 @@ nav{
 }
                                             /*tarjetas*/
 .tarjetas{
+  
   display: flex;
-  gap: 56px;
-  margin-top: 128px;
-  border-bottom: 2px solid var(--gris);
+  gap: 64px;
+  padding: 128px 0px;
+  border-top: 2px solid var(--gris);
 }
+
 .tarjetas-info{
   text-align: center;
+  
 }
 .tarjetas-info img{
   width: 100%;
@@ -142,20 +151,28 @@ nav{
 .tarjetas-info h4{
   margin: 0;
 }
+.tarjetas div{
+  width: 100%;
+}
 .card{  
   border: 2px solid var(--primario);
   border-radius: 16px;
   padding: 16px;
   transition: transform .1s;
   margin-bottom: 40px;
+
 }
 .card:hover{
   transform: scale(1.5);
   background-color: #f8f8f8;
   cursor: pointer;
 }
-.card div img{
+.card div {
   width: 100%;
+}
+.card h5{
+  font-weight: bold;
+  font-family: '';
 }
 .card-info{
   padding: 8px;
@@ -165,6 +182,9 @@ nav{
 }
 .card-info h4{
   margin: 0;
+}
+.card-title{
+  font-family: var(--texto);
 }
 
 .precio{
@@ -180,6 +200,7 @@ nav{
   width: 100%;
 }
 .comprar{
+  margin-top: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;

@@ -28,12 +28,14 @@
               </div>
             
         </div>
-        <div class="h-izq">            
-            <a href="carrito.html" id="carrito">
+        <div class="d-flex  justify-content-end">            
+            <div class="h-izq">
+              <a href="carrito.html" id="carrito">
                 <img src="../img/iconos/carrito1.png" alt="" ">
-                <span class="absolute">2</span>
+                <span class="absolute d-none" id="cantidad"></span>
             </a>                    
-            <a href="login.html" class="boton"><img src="../img/iconos/logging.png" alt="">Iniciar sesion</a>
+            </div>
+            <div id="btn" class="mx-2"></div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -127,287 +129,85 @@
                 <h2>Nuestras figuras de oferta</h2>
                 <div>
                     <ul class="ruleta">
-                        <li><a href="#onepiece"><img src="../img/animes/one piece/luffy/LUFFY.jpg" alt="onepiece"></a></li>
-                        <li><a href="#kimetsu"><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="kimetsu"></a></li>
-                        <li><a href="#naruto"><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="naruto"></a></li>
+                        <li><a href="#Onepiece"><img src="../img/animes/one piece/luffy/LUFFY.jpg" alt="onepiece"></a></li>
+                        <li><a href="#Kimetsu"><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="kimetsu"></a></li>
+                        <li><a href="#Naruto"><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="naruto"></a></li>
                     </ul>
                     <ul class="ruleta">
-                        <li><a href="#jujutsu"><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="jujutsu"></a></li>
-                        <li><a href="#dragonball"><img src="../img/animes/dragonball/goku/personajes.png" alt="dragonball"></a></li>
-                        <li><a href="#hero"><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="hero"></a></li>
+                        <li><a href="#Jujutsu"><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="jujutsu"></a></li>
+                        <li><a href="#Dragonball"><img src="../img/animes/dragonball/goku/personajes.png" alt="dragonball"></a></li>
+                        <li><a href="#Hero"><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="hero"></a></li>
                     </ul>
                 </div>
             </div>
         </section>
         <section>
-            <div class="tarjetas wrap" id="onepiece">
-                <div class="tarjetas-info" >
+            <div class="d-flex align-items-center my-4 " id="Onepiece">
+                <div class="tarjetas-info w-25" >
                     <a href="onepiece.html" ><img src="../img/animes/one piece/luffy/LUFFY.jpg" alt="onepiece"></a>
                     <h4>One piece</h4>
                 </div>
-                <div class="card" >
-                    <img src="../img/animes/one piece/oferta-brook.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Brook Red Film-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                  <div class="card" >
-                    <img src="../img/animes/one piece/oferta-shanks.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/one piece/luffy/logo_88505_2643781_1-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
+                <div class="row wrap gap-5 border-top border-secondary" id="onepiece">
+                   
+                </div>
+               
                   </div>
             </div>
-            <div class="tarjetas wrap" id="kimetsu">
-                <div class="tarjetas-info">
-                    <a href="kimetsu.html" ><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="onepiece"></a>
-                    <h4>Kimetsu no Yaiba</h4>
+            <div class="d-flex align-items-center my-4" id="Kimetsu">
+              <div class="tarjetas-info w-25" >
+                  <a href="kimetsu.html" ><img src="../img/animes/kimetsu/tanjiro/Tanjiro-Kamado-1.jpg" alt="kimetsu"></a>
+                  <h4>Kimetsu no yaiba</h4>
+              </div>
+              <div class="row wrap gap-5 border-top border-secondary" id="kimetsu">
+                 
+              </div>
+             
                 </div>
-                <div class="card" >
-                    <img src="../img/animes/kimetsu/bp19359_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/kimetsu/bp60201_angulo-1-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/kimetsu/MH833427-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                
+          </div>
+          <div class="d-flex align-items-center my-4" id="Naruto">
+            <div class="tarjetas-info w-25" >
+                <a href="naruto.html" ><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="naruto"></a>
+                <h4>Naruto</h4>
             </div>
-            <div class="tarjetas wrap" id="naruto">
-                <div class="tarjetas-info">
-                    <a href="naruto.html" ><img src="../img/animes/naruto/naruto/NARUTO-SHIPPUDEN-FIGURAS.jpg" alt="onepiece"></a>
-                    <h4>Naruto</h4>
-                </div>
-                <div class="card" >
-                    <img src="../img/animes/naruto/naruto/bp88090_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/naruto/bp19131_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/naruto/bp19438_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
+            <div class="row wrap gap-5 border-top border-secondary" id="naruto">
+               
             </div>
-            <div class="tarjetas wrap" id="jujutsu">
-                <div class="tarjetas-info">
-                    <a href="jujutsu.html" ><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="onepiece"></a>
-                    <h4>Jujutsu Kaisen</h4>
-                </div>
-                <div class="card" >
-                    <img src="../img/animes/jujutsu/bp18377_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/jujutsu/bp19159_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/jujutsu/bp19579_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
-                
+           
+              </div>
+        </div>
+        <div class="d-flex align-items-center my-4" id="Jujutsu">
+          <div class="tarjetas-info w-25" >
+              <a href="jujutsu.html" ><img src="../img/animes/jujutsu/gojo/SATORU-GOJO.jpg" alt="jujutsu"></a>
+              <h4>Jujutsu Kaisen</h4>
+          </div>
+          <div class="row wrap gap-5 border-top border-secondary" id="jujutsu">
+             
+          </div>
+         
             </div>
-            <div class="tarjetas wrap" id="dragonball">
-                <div class="tarjetas-info">
-                    <a href="dragoball.html" ><img src="../img/animes/dragonball/goku/personajes.png" alt="onepiece"></a>
-                    <h4>Dragonball</h4>
-                </div>
-                <div class="card" >
-                    <img src="../img/animes/dragonball/24906-logo_18738_2604754_DBZ_G´¥aµ¦i_VEGETA-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/dragonball/bp19379_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/dragonball/bp35927_frente-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                  </div>
-                
-            </div>
-            <div class="tarjetas wrap" id="hero">
-                <div class="tarjetas-info">
-                    <a href="hero.html" ><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="onepiece"></a>
-                    <h4>Boku no Hero</h4>
-                </div>
-                <div class="card" >
-                    <img src="../img/animes/Boku no hero/oferta-bakugo.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/Boku no hero/oferta-todoroki.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div><div class="card" >
-                    <img src="../img/animes/Boku no hero/dabi/logo_88287_2652616_1-300x300.jpg" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>
-                    <div class="card-body">
-                      <h5 class="h5">Figura Kamado Nezuko Demonio-23cm</h5>
-                      <div class="precio">
-                        <h5>25<i class="bi bi-currency-euro m-color"></i></h5>
-                        <div><span class="m-color"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span><i class="bi bi-star-fill"></i></div>
-                    </div>
-                    <div class="comprar">
-                        <button class="boton">¡Lo quiero!</button>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                
-            </div>
+      </div>
+      <div class="d-flex align-items-center my-4" id="Dragonball">
+        <div class="tarjetas-info w-25" >
+            <a href="dragonball.html" ><img src="../img/animes/dragonball/goku/personajes.png" alt="dragonball"></a>
+            <h4>Dragonball</h4>
+        </div>
+        <div class="row wrap gap-5 border-top border-secondary" id="dragonball">
+           
+        </div>
+       
+          </div>
+    </div>
+    <div class="d-flex align-items-center my-4" id="Hero">
+      <div class="tarjetas-info w-25" >
+          <a href="hero.html" ><img src="../img/animes/Boku no hero/deku/IZUKO-1-1.jpg" alt="hero"></a>
+          <h4>Boku no Hero</h4>
+      </div>
+      <div class="row wrap gap-5 border-top border-secondary" id="hero">
+         
+      </div>
+     
+        </div>
+  </div>
         </section>
         <section class="compromisos">
             <div class="wrap">
@@ -502,5 +302,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script src="/js/general.js"></script>
+    <script src="/js/ofertas.js"></script>
+  </body>
 </html>

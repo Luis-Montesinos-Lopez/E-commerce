@@ -22,3 +22,7 @@
 .jumbotron .boton{
     background-color: rgb(0, 0, 0,0.1);
 }
+.activo{
+    background-color: #f8f8f8;
+    border: 2px solid var(--primario-claro);
+  }

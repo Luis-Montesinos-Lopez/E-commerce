@@ -2,7 +2,6 @@ const host='http://localhost:3000';
 
 const registrar=()=>{
     const nombre=document.getElementById('nombre').value;
-    const val=document.getElementById('val').value;
     const precio=document.getElementById('precio').value;
     const descrCort=document.getElementById('derc_cor').value;
     const img=document.getElementById('img').value;
@@ -12,13 +11,13 @@ const registrar=()=>{
     const ref=document.getElementById('ref').value;
     const tipo=document.getElementById('tipo').value;
     const oferta=document.getElementById('oferta').value;
-    console.log(nombre,val,precio,descrCort,img,descLarg,stock,cantidad,ref,tipo,oferta);
+    console.log(nombre,precio,descrCort,img,descLarg,stock,cantidad,ref,tipo,oferta);
     fetch(`${host}/producto`,{
         method: 'post',
         headers: {
-            'Content-Type':'appliaction/json',
+            'Content-Type':'application/json',
         },
-        body: JSON.stringify({nombre:nombre,valoracion:val,precio:precio,descripcion_corta:descrCort,imagen_producto:img,descripcion_larga:descLarg,
+        body: JSON.stringify({nombre:nombre,precio:precio,descripcion_corta:descrCort,imagen_producto:img,descripcion_larga:descLarg,
         stock:stock,cantidad:cantidad,referencia:ref,tipo:tipo,oferta:oferta}),
     }).then((response)=>{
         return response.json();

@@ -1,18 +1,28 @@
 const express = require('express')
 const mysql = require('mysql2')
+const dotenv = require('dotenv')
+//const loginRouter = require('./routes/loginRouter')
+dotenv.config()
 const app = express()
+const host = process.env.HOST
+const user = process.env.USER
+const password = process.env.PASS
+const database = process.env.DB
+const port = process.env.PORT
+
 const pc = require('picocolors')
 app.use(express.static('public'))
 app.use(express.json())
+//app.use(loginRouter)
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'W3llc0m3@',
-  database: 'nakama_store'
+  host: host,
+  user: user,
+  password: password,
+  database: database
 })
 connection.connect((err) => {
   if (err) {
-    return console.err(pc.red(err))
+    return console.log(err)
   };
   console.log(pc.cyan('✔ Connected to MYSQL!!'))
 })
@@ -376,6 +386,6 @@ app.post('/direccion/:id', (request, response) => {
 })
 
 /** ---------------------------------------------------------Fin Endpoints carrito----------------------------------------------------------------------------------------------------------- */
-app.listen(3000, () => {
-  console.log(pc.cyan('💪 Server up and running on 3000!!'))
+app.listen(port, () => {
+  console.log(pc.cyan(`💪 Server up and running on ${port}!!`))
 })

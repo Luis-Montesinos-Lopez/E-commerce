@@ -1,7 +1,7 @@
 const insertar = (mensaje, serie) => {
   for (let i = 0; i < mensaje.length; i++) {
     const Serie = document.getElementById(`${serie}`)
-    if (i == 3) {
+    if (i == 3|| i == 6|| i == 9) {
       Serie.innerHTML += `<div class="w-100"></div>
                 <div class="card col-6 col-sm-3" >
             <img src="${mensaje[i].imagen_producto}" class="card-img-top" alt="..."><i class="bi bi-zoom-in m-color"></i>

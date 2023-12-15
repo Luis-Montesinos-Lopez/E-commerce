@@ -33,9 +33,9 @@ const registrar = () => {
     return response.json()
   }).then((json) => {
     alert(json.message)
-    if (json.message == 'El producto se ha añadido correctamente.') {
-      window.location.href = '/html/card.html'
-    };
+    // if (json.message == 'El producto se ha añadido correctamente.') {
+    //   window.location.href = '/html/card.html'
+    // };
   }).catch((error) => {
     console.error(error)
   })

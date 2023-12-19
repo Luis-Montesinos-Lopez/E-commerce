@@ -90,7 +90,7 @@ app.get('/seleccionProducto/:cant/:num', (request, response) => {
 })
 /** -----------------------------------------------------Query de ofertas------------------------------------------------------------------------------- */
 app.get('/ofertas', (request, response) => {
-  connection.query('select nombre,precio,imagen_producto,tipo,id from productos where oferta=1', (error, result, fields) => {
+  connection.query('select nombre,precio,imagen_producto,tipo,id,oferta from productos where oferta=1', (error, result, fields) => {
     handleSQLError(response, error, result, (result) => {
       response.send(result)
     })
@@ -104,6 +104,52 @@ app.get('/productos/:id', (request, response) => {
       response.send(result[0])
     })
   })
+})
+/**--------------------------------------------------Query de un producto y su valoración----------------------------------------------------*/
+app.get('/productoValoracion/:id', (request, response) => {
+  const productoId = request.params.id
+  connection.query(`SELECT productos.nombre,productos.precio, productos.imagen_producto,productos.descripcion_corta,
+  productos.descripcion_larga,productos.referencia,productos.tipo,productos.oferta,AVG(valoraciones.valoracion) AS valoracion FROM productos JOIN valoraciones
+   ON productos.id=valoraciones.producto_id WHERE productos.id=${productoId}`, (error, result, fields) => {
+    handleSQLError(response, error, result, (result) => {
+      response.send(result[0])
+    })
+  })
+})
+/**--------------------------------------------------Query traer valoración de un producto-----------------------------------------------------------------------*/
+app.get('/valoraciones/:id', (request,response)=>{
+  connection.query(`SELECT usuarios.nombre,usuarios.apellidos, valoraciones.valoracion,valoraciones.comentario FROM usuarios 
+  JOIN valoraciones on usuarios.id=valoraciones.usuario_id WHERE valoraciones.producto_id=${request.params.id}`,
+  (error,result,fields)=>{
+    handleSQLError(response,error,result,(result)=>{
+      if(result.length==0){
+        response.send({message:'vacio'})
+      }else{
+       response.send(result[0]); 
+      }
+      
+    })
+  })
+});
+/**------------------------------------------------------Query para introducir valoracion---------------------------------------------------*/
+app.post('/valoraciones',(request,response) => {
+    const usuario_id=request.body.usuario_id;
+    const valoracion=request.body.valoracion;
+    const comentario=request.body.comentario;
+    const producto_id=request.body.producto_id;
+    connection.query(`select id from valoraciones where usuario_id=${usuario_id} and producto_id=${producto_id}`, (error,result,fields)=>{
+      handleSQLError(response,error,result,(result)=>{
+        if(result.length>0){
+          response.send({message:'Ya comentado'})
+        }else{
+          connection.query(`insert into valoraciones (usuario_id,valoracion,comentario,producto_id) values (${usuario_id},${valoracion},'${comentario}',${producto_id})`,(error,result,fields)=>{
+            handleSQLError(response,error,result,(result)=>{
+              response.sendStatus(200)
+            })
+          })
+        }
+      })
+    }) 
 })
 /** -----------------------------------------------------Query de un producto por categoría---------------------------------------------------------- */
 app.get('/productosTipo/:tipo', (request, response) => {
@@ -229,6 +275,19 @@ app.get('/carrito/:id', (request, response) => {
     })
   })
 })
+app.post('/addMany',(req,res)=>{
+  const compra_id=req.body.compra_id;
+  console.log(compra_id)
+  const producto_id=req.body.producto_id;
+  console.log(producto_id)
+  const cantidad=req.body.cantidad;
+  console.log(cantidad)
+  connection.query(`insert into compraproducto (compra_id,producto_id,cantidad) values (${compra_id},${producto_id},${cantidad})`,(error,result,fields)=>{
+    handleSQLError(res,error,result,(result)=>{
+      res.sendStatus(200)
+    });
+  });
+});
 
 /** -------------------------------------------Modificar cantidades de una compra---------------------------------------------------------------------------- */
 /** Añadir cantidad de un producto */

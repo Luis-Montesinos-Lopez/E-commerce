@@ -4,8 +4,8 @@ console.log(comId)
 const precio = localStorage.getItem('precio')
 console.log(precio)
 let tarjeta = false
-const usuarioId = localStorage.getItem('user')
-console.log(usuarioId)
+const user = localStorage.getItem('user')
+
 
 const addCard = () => {
   const n_tarjeta = document.getElementById('numTarjeta').value
@@ -67,22 +67,33 @@ const compra = (valor, total) => {
     HTMLFormControlsCollection.error(error)
   })
 }
-window.addEventListener('load', showCards(usuarioId), compra(comId, precio))
 
-const select = document.getElementById('seleccion')
-select.addEventListener('change', (event) => {
-  const cardId = event.target.value
-  fetch(`${host}/tarjeta/${cardId}`
-  ).then((response) => {
-    return response.json()
-  }).then((json) => {
-    document.getElementById('numTarjeta').value = json.n_tarjeta
-    document.getElementById('titular').value = json.titular_tarjeta
-    document.getElementById('cad').value = json.caducidad
-  }).catch((error) => {
-    console.error(error)
+const selectCard = () => {
+  const select = document.getElementById('seleccion');
+  select.addEventListener('change', (event) => {
+    const cardId = event.target.value
+    if(cardId==0){
+      document.getElementById('numTarjeta').value = ""
+      document.getElementById('titular').value = ""
+      document.getElementById('cad').value = ""
+    }else{
+      fetch(`${host}/tarjeta/${cardId}`
+    ).then((response) => {
+      return response.json()
+    }).then((json) => {
+      document.getElementById('numTarjeta').value = json.n_tarjeta
+      document.getElementById('titular').value = json.titular_tarjeta
+      document.getElementById('cad').value = json.caducidad
+    }).catch((error) => {
+      console.error(error)
+    })
+    }
+    
   })
-})
+}
+  
+
+
 const registrartarjeta = () => {
   const n_tarjeta = document.getElementById('nuevaTarjeta').value
   const titular = document.getElementById('n_titular').value
@@ -121,3 +132,4 @@ const n_tarjeta = () => {
     tarjeta = false
   };
 }
+window.addEventListener('load', showCards(user), compra(comId, precio), selectCard())
